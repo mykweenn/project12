@@ -1,0 +1,40 @@
+html {
+  height: 100%;
+  width: 100%;
+}
+body {
+    background-color: aqua;
+}
+
+header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: #fff;
+    z-index: 999; 
+}
+
+.nav-menu {
+    display: flex;
+}
+.nav-element {
+    background-color: #fff;
+    margin-right: 30px;
+    list-style: none;
+    height: 40px;
+}
+.nav-li {
+    margin: auto 0;
+}
+
+.nav-element:hover {
+    background-color: orange;
+}
+.ss_a {
+    text-decoration: none;
+    color: black;
+}
+.help_tb {
+    margin-top :210px;
+}
