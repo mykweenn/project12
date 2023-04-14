@@ -3,38 +3,69 @@ html {
   width: 100%;
 }
 body {
-    background-color: aqua;
+  background-repeat: repeat;
+  background-image: url("image/abs_wp1.jpg");
 }
-
-header {
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    background-color: #fff;
-    z-index: 999; 
+.title span {
+	display: inline;
+	background-color: #ffffff;
+	box-shadow: -10px 0 0 #ffffff, 10px 0 0 #ffffff;
+	padding: 10px 0;
+	color: #000000;
+	font-size: 20px;
+  border-radius: 12px;
+  margin: 50%;
 }
-
+/*_________________Шапка_сайта_________________*/
 .nav-menu {
-    display: flex;
-}
-.nav-element {
-    background-color: #fff;
-    margin-right: 30px;
-    list-style: none;
-    height: 40px;
+  display: flex;
+  justify-content: right;
 }
 .nav-li {
-    margin: auto 0;
+  margin: auto 0;
+}
+.nav-element1 {
+  margin-right: 25px;
+  list-style: none;
+  height: 40px;  
+}
+.nav-element:hover {
+  background-color: orange;
+}
+header {
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 999;
+  margin-bottom: 3%;
+}
+.aboba {
+  font-size: 25px;
+  font-weight: 600;
+  font-family: 'Shadows Into Light', cursive;
+  background-size: 250px;
+  background-repeat: repeat;
+  -webkit-background-clip: text;
+  background-clip: text; 
+  color: black;
+  background-color: rgb(255 255 255 / .2 );
+  box-shadow: 0px 0px 12px #000000;
+  border-radius: 10px;
+  padding: 7px;
+
+}
+.sas_a{
+  text-decoration: none;
+}
+/*---------конец---------*/
+.parent {
+  display: flex;
+  justify-content: space-between;
+  box-sizing: border-box;
+}
+.child_1 {
+  min-height: 100vh;
+  background-color: rgb(255 255 255 / .5 );
+  width: 50%;
 }
 
-.nav-element:hover {
-    background-color: orange;
-}
-.ss_a {
-    text-decoration: none;
-    color: black;
-}
-.help_tb {
-    margin-top :150px;
-}

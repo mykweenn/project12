@@ -1,0 +1,177 @@
+html {
+  height: 100%;
+  width: 100%;
+}
+body {
+  background-repeat: repeat;
+  background-image: url(image/kir_wp.jpg);
+}
+/*.title span {
+	display: inline;
+	padding: 10px 0;
+	color: #000000;
+	font-size: 20px;
+  border-radius: 12px;
+  margin: 50%;
+}*/
+.title2 {
+  background-color: rgb(255 255 255 / .5 );
+  box-shadow: 0px 0px 12px #000000;
+  border-radius: 10px;
+	display: inline;
+	padding: 10px 20px;
+	font-size: 20px;
+  margin: 50%;
+}
+footer {
+  background-color: rgb(255 255 255 / .35 );
+  border-top: solid rgb(100 100 100) 2px;
+  padding-top: 10px;
+  padding-left: 10px;
+  margin-top: 30px;
+}
+.footer_c {
+  font-size: 20px;
+  font-weight: 600;
+  font-family: 'Shadows Into Light', cursive;
+}
+/*_________________Шапка_сайта_________________*/
+.nav-menu {
+  display: flex;
+  justify-content: right;
+}
+.nav-li {
+  margin: auto 0;
+}
+.nav-element1 {
+  margin-right: 25px;
+  list-style: none;
+  height: 40px;  
+}
+.nav-element:hover {
+  background-color: orange;
+}
+header {
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 999;
+  margin-bottom: 3%;
+}
+.aboba {
+  font-size: 25px;
+  font-weight: 600;
+  font-family: 'Shadows Into Light', cursive;
+  background-size: 250px;
+  background-repeat: repeat;
+  -webkit-background-clip: text;
+  background-clip: text; 
+  color: black;
+  background-color: rgb(255 255 255 / .2 );
+  box-shadow: 0px 0px 12px #000000;
+  border-radius: 10px;
+  padding: 7px;
+
+}
+.sas_a{
+  text-decoration: none;
+}
+/*___________Список_с_выплывающим_ответом___________*/
+.faq__wrapper{
+  margin-top: 20px;
+}
+.ulbord {
+display: block;
+padding: 12px;
+outline: 0;
+cursor: pointer;
+-webkit-transition: all 150ms ease-in-out;
+transition: all 150ms ease-in-out;
+height: calc(100% + 4px);
+overflow: hidden;
+background-color: rgb(255 255 255 / .5 );
+box-shadow: 0px 0px 12px #000000;
+border-radius: 10px;
+font-family: 'Shadows Into Light'; 
+margin: 0 auto;
+width: 70%;
+}
+.ulbord1 {
+margin-top: 15px;
+padding: 10px;
+background-color: rgb(255 255 255 / .5 );
+box-shadow: 0px 0px 12px #000000;
+border-radius: 10px;
+font-size: 14px;
+line-height: 22px;
+font-family: 'Shadows Into Light', cursive;
+}
+.faq__list {
+  margin-left: 0px;
+  margin-right: 30px;
+}
+.ots{
+  margin: 10px 0;
+  
+}
+summary {
+  display: block; 
+  list-style: none;
+}
+summary::marker,
+summary::-webkit-details-marker {
+display: none;
+}
+.image-icon{
+  width: 25px;
+  height: 25px;
+}
+.papa {
+display: flex;
+justify-content: space-between;
+box-sizing: border-box;
+}
+.link {
+transform: rotate(45deg);
+}
+
+
+
+
+details {
+  cursor: pointer;
+}
+details summary {
+  transition: all 0.3s ease-in-out;
+}
+details[open] > * {
+  animation: fade-in 0.3s ease-in-out;
+}
+@keyframes slide-down {
+  from {
+    opacity: 0;
+    transform: translateY(-10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+
+
+details[open] > * {
+  animation-name: slide-down;
+  animation-duration: 0.5s;
+  animation: sweep 2s ease-in-out;
+}
+@keyframes slide-down {
+  from {
+    opacity: 0;
+    transform: translateY(-10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
