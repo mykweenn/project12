@@ -1,10 +1,12 @@
-html {
+html,body {
+  display: grid;
   height: 100%;
   width: 100%;
+  place-items: center;
+  background: linear-gradient(315deg, #ffffff 0%, #d7e1ec 74%);
 }
 body {
-  background-repeat: repeat;
-  background-image: url(image/kir_wp.jpg);
+    padding: 20px;
 }
 /*.title span {
 	display: inline;
@@ -14,6 +16,11 @@ body {
   border-radius: 12px;
   margin: 50%;
 }*/
+
+span {
+  font-size: 18px;
+  
+}
 .title2 {
   background-color: rgb(255 255 255 / .5 );
   box-shadow: 0px 0px 12px #000000;
@@ -48,6 +55,15 @@ footer {
   list-style: none;
   height: 40px;  
 }
+.nav-cat{
+        margin: 0;
+        list-style: none;
+
+        display: flex;
+        justify-content: right;
+
+
+}
 .nav-element:hover {
   background-color: orange;
 }
@@ -71,6 +87,22 @@ header {
   box-shadow: 0px 0px 12px #000000;
   border-radius: 10px;
   padding: 7px;
+  transition-duration: 0.8s;
+
+
+
+
+}
+.cat {
+    margin-top: 0px;
+    margin-left: 0px;
+    margin-right: 50%;
+    height: 100px;
+    width: 100px;
+    border-radius: 100px;
+    box-shadow: 0px 0px 12px #000000;
+  transition-duration: 0.8s;
+
 
 }
 .sas_a{
@@ -85,8 +117,9 @@ display: block;
 padding: 12px;
 outline: 0;
 cursor: pointer;
--webkit-transition: all 150ms ease-in-out;
-transition: all 150ms ease-in-out;
+-webkit-transition: all 150s ease-in-out;
+transition: all 150s ease-in-out;
+  
 height: calc(100% + 4px);
 overflow: hidden;
 background-color: rgb(255 255 255 / .5 );
@@ -94,9 +127,12 @@ box-shadow: 0px 0px 12px #000000;
 border-radius: 10px;
 font-family: 'Shadows Into Light'; 
 margin: 0 auto;
-width: 70%;
+max-width: 70%; 
+transition-duration: 0.8s;
+
 }
 .ulbord1 {
+
 margin-top: 15px;
 padding: 10px;
 background-color: rgb(255 255 255 / .5 );
@@ -105,6 +141,7 @@ border-radius: 10px;
 font-size: 14px;
 line-height: 22px;
 font-family: 'Shadows Into Light', cursive;
+transition-duration: 0.8s;
 }
 .faq__list {
   margin-left: 0px;
@@ -114,6 +151,10 @@ font-family: 'Shadows Into Light', cursive;
   margin: 10px 0;
   
 }
+.faq{
+  border-bottom-color: rgb(170, 50, 220, .6);
+  transition-duration: 0.8s;
+}
 summary {
   display: block; 
   list-style: none;
@@ -121,10 +162,14 @@ summary {
 summary::marker,
 summary::-webkit-details-marker {
 display: none;
+transition-duration: 0.8s;
+  
 }
 .image-icon{
-  width: 25px;
-  height: 25px;
+  width: 50px;
+  height: 50px;
+  border-radius: 100px;
+  
 }
 .papa {
 display: flex;
@@ -135,43 +180,14 @@ box-sizing: border-box;
 transform: rotate(45deg);
 }
 
-
-
-
-details {
-  cursor: pointer;
+details summary ~ div{
+overflow: hidden;
+animation: sweep 2s ease-in-out;
 }
-details summary {
-  transition: all 0.3s ease-in-out;
+details[open] summary ~ div{ 
+animation: sweep 2s ease-in-out;
 }
-details[open] > * {
-  animation: fade-in 0.3s ease-in-out;
-}
-@keyframes slide-down {
-  from {
-    opacity: 0;
-    transform: translateY(-10px);
-  }
-  to {
-    opacity: 1;
-    transform: translateY(0);
-  }
-}
-
-
-
-details[open] > * {
-  animation-name: slide-down;
-  animation-duration: 0.5s;
-  animation: sweep 2s ease-in-out;
-}
-@keyframes slide-down {
-  from {
-    opacity: 0;
-    transform: translateY(-10px);
-  }
-  to {
-    opacity: 1;
-    transform: translateY(0);
-  }
+@keyframes sweep {
+0%    {max-height:0;}
+100%  {max-height:2000px;}
 }

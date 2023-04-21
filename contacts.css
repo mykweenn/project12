@@ -4,10 +4,7 @@ html {
   height: 100%;
   width: 100%;
 }
-body {
-  background-repeat: repeat;
-  background-image: url("image/kir_wp.jpg");
-}
+
 .title span {
 	display: inline;
 	background-color: #ffffff;
@@ -31,6 +28,17 @@ body {
   list-style: none;
   height: 40px;  
 }
+
+.nav-cat{
+        margin: 0;
+        list-style: none;
+
+        display: flex;
+        justify-content: right;
+
+
+}
+
 .nav-element:hover {
   background-color: orange;
 }
@@ -54,6 +62,20 @@ header {
   box-shadow: 0px 0px 12px #000000;
   border-radius: 10px;
   padding: 7px;
+  transition-duration: 0.8s;
+
+
+
+}
+.cat {
+    margin-top: 0px;
+    margin-left: 0px;
+    margin-right: 50%;
+    height: 100px;
+    width: 100px;
+    border-radius: 100px;
+    box-shadow: 0px 0px 12px #000000;
+
 
 }
 .sas_a{
@@ -78,7 +100,9 @@ html,body {
   place-items: center;
   background: linear-gradient(315deg, #ffffff 0%, #d7e1ec 74%);
 }
-
+body {
+    padding: 20px;
+}
 .wrapper .button {
   display: inline-block;
   height: 60px;
@@ -120,9 +144,7 @@ html,body {
 .wrapper .button:nth-child(4):hover .icon{
   background: #f11515;
 }
-.wrapper .button:nth-child(5):hover .icon{
-  background: #ff0000;
-}
+
 
 .wrapper .button .icon i{
   font-size: 25px;
@@ -151,8 +173,11 @@ html,body {
   color: #E1306C;
 }
 .wrapper .button:nth-child(4) span{
-  color: #333;
+  color: #db0000;
 }
-.wrapper .button:nth-child(5) span{
-  color: #ff0000;
+
+.footer_c {
+  font-size: 20px;
+  font-weight: 600;
+  font-family: 'Shadows Into Light', cursive;
 }

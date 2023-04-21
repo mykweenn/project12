@@ -43,11 +43,12 @@ header {
   background-clip: text; 
   color: black;
   background-color: rgb(255 255 255 / .2 );
-  box-shadow: inset 0px 2px #000000, 0px 0px 10px #000000;
+  box-shadow:0px 0px 20px #000000;
   border-radius: 10px;
   padding: 7px;
+  transition-duration: 0.7s; 
 }
-.aboba {
+.aboba:hover {
   font-size: 1.4vw;
   font-weight: 600;
   font-family: 'Shadows Into Light', cursive;
@@ -57,7 +58,7 @@ header {
   background-clip: text; 
   color: black;
   background-color: rgb(255 255 255 / .2 );
-  box-shadow: inset 0px 1px #000000, 0px 0px 2px #000000;
+  box-shadow: 0px 0px 5px #000000;
   border-radius: 10px;
   padding: 7px;
 }
@@ -107,6 +108,7 @@ header {
   text-align: center;
   color: #1E90FF;
   text-shadow: 1px 0 1px #000, 0 1px 1px #000, -1px 0 1px #000, 0 -1px 1px #000;
+  letter-spacing: 0.1vw;
 }
 /*__________Сетка__________*/
 .care_cols {
